@@ -84,6 +84,11 @@ class LaunchScreen {
         this.skipButtonMobile.addEventListener('click', this.skipClick.bind(this));
         this.startButton.element.addEventListener('click', this.startClick.bind(this));
         this.startButton.element.addEventListener('touchend', this.startClick.bind(this));
+
+        let eles = document.getElementsByClassName('wizard__skip-button');
+        if (eles !== null && eles.length > 0) {
+            eles[0].click();
+        }
     }
 
     openFacebookPopup(event) {
