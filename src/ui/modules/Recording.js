@@ -356,7 +356,7 @@ class Recording {
         },
         this.RECORD_TIME
         );
-        gtag('event', 'recording_start');
+        // gtag('event', 'recording_start');
     }
 
     show() {
@@ -413,7 +413,7 @@ class Recording {
         };
         let popup = window.open('/fb', 'Share on Facebook', 'width=600, height=600');
         popup.focus();
-        gtag('event', 'recording_share');
+        // gtag('event', 'recording_share');
     }
 }
 

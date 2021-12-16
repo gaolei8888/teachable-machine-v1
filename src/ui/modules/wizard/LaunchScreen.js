@@ -112,7 +112,7 @@ class LaunchScreen {
         let intro = document.querySelector('.intro');
         let offset = intro.offsetHeight;
         GLOBALS.wizard.skip();
-        gtag('event', 'wizard_skip');        
+        // gtag('event', 'wizard_skip');
 
         if (GLOBALS.browserUtils.isMobile) {
             let msg = new SpeechSynthesisUtterance();
