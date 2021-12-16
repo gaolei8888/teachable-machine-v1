@@ -168,11 +168,11 @@ class LearningClass {
 			GLOBALS.webcamClassifier.buttonDown(this.id, this.canvas, this);
 		}, 100);
 
-		gtag('event', 'training', {'id': this.index});
+		// gtag('event', 'training', {'id': this.index});
 	}
 
 	buttonUp() {
-		this.button.setText(`Train <br>${this.id}`);
+		this.button.setText(`训练 <br>${this.id}`);
 		this.section.stopRecording();
         clearTimeout(this.buttonClickTimeout);
 		this.button.up();

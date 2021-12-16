@@ -372,7 +372,7 @@ this.steps.push({
         event: () => {
             this.setText('');
             this.skip();
-            gtag('event', 'wizard_finish');            
+            // gtag('event', 'wizard_finish');
         }
     }
     ]
@@ -424,7 +424,7 @@ this.stopTime = 0;
 this.audio = new Audio();
 this.loadedEvent = this.loaded.bind(this);
 this.audio.addEventListener('canplaythrough', this.loadedEvent);
-this.audio.src = 'assets/wizard/voice-over.mp3';
+this.audio.src = 'assets/tm_v1/wizard/voice-over.mp3';
 
 this.wizardWrapper = document.querySelector('.wizard__wrapper');
 this.bar = document.querySelector('#wizard');
@@ -675,7 +675,7 @@ start() {
     this.play(0);
     this.startAudioTimer();
     GLOBALS.launchScreen.destroy();
-    gtag('event', 'wizard_start');        
+    // gtag('event', 'wizard_start');
 }
 
 startCamera() {
@@ -685,7 +685,7 @@ startCamera() {
 skip(event) {
     if (event) {
         event.preventDefault();
-        gtag('event', 'wizard_skip_mid');        
+        // gtag('event', 'wizard_skip_mid');
     }
 
     if (this.wizardRunning) {

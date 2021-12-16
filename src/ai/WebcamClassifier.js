@@ -105,7 +105,7 @@ export default class WebcamClassifier {
 
         let event = new CustomEvent('webcam-status', {detail: {granted: true}});
         window.dispatchEvent(event);
-        gtag('event', 'webcam_granted');
+        // gtag('event', 'webcam_granted');
         this.startTimer();
       }).
       catch((error) => {
@@ -117,7 +117,7 @@ export default class WebcamClassifier {
         });
         this.activateWebcamButton.style.display = 'block';
         window.dispatchEvent(event);
-        gtag('event', 'webcam_denied');
+        // gtag('event', 'webcam_denied');
       });
     }
   }
