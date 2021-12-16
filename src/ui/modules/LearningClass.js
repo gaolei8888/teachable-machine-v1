@@ -172,7 +172,7 @@ class LearningClass {
 	}
 
 	buttonUp() {
-		this.button.setText(`Train <br>${this.id}`);
+		this.button.setText(`训练 <br>${this.id}`);
 		this.section.stopRecording();
         clearTimeout(this.buttonClickTimeout);
 		this.button.up();
